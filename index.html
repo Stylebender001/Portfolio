@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <title>Shardul Sapkota - Personal Portfolio</title>
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/profile.png" alt="Shardul Sapkota" />
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Shardul Sapkota">Shardul Sapkota</h1>
+          <p class="title">Web Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn aria-expanded="false">
+          <span>Show Contacts</span>
+        </button>
+
+        <div class="sidebar-info_more">
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">📧</div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:sapkotashardul7@gmail.com" class="contact-link"
+                  >sapkotashardul7@gmail.com</a
+                >
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">📞</div>
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+                <a href="tel:+9779866182568" class="contact-link"
+                  >+9779866182568</a
+                >
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">🎂</div>
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+                <time datetime="2003-12-31">December 31, 2003</time>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">📍</div>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <address>Balkot, Bhaktapur</address>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- About Section -->
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="article-title">About me</h2>
+        </header>
+        <section class="about-text">
+          <p>
+            I am a computer science student passionate about software
+            development and building modern web applications. I focus on
+            creating responsive frontends with React.js and developing secure,
+            scalable backends using Laravel and PHP. I’m currently seeking
+            internship opportunities to apply my skills in real-world projects
+            and further grow as a full-stack developer. My goal is to deliver
+            efficient, user-friendly digital experiences through clean code and
+            thoughtful design.
+          </p>
+          <p>
+            My job is to build your website so that it is functional and
+            user-friendly but at the same time attractive. Moreover, I add
+            personal touch to your product and make sure that it is eye-catching
+            and easy to use. My aim is to bring across your message and identity
+            in the most creative way.
+          </p>
+        </section>
+
+        <section class="service">
+          <h3 class="article-title">Skills</h3>
+          <div class="skills-grid">
+            <div class="skill-item">HTML5</div>
+            <div class="skill-item">CSS</div>
+            <div class="skill-item">JS</div>
+            <div class="skill-item">REACT</div>
+            <div class="skill-item">PHP</div>
+            <div class="skill-item">LARAVEL</div>
+            <div class="skill-item">MYSQL</div>
+          </div>
+        </section>
+      </article>
+
+      <!-- Resume Section -->
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="article-title">Resume</h2>
+        </header>
+        <p>You can download my CV below:</p>
+        <a
+          href="./assets/files/Shardul_Sapkota_CV.pdf"
+          download
+          class="download-btn"
+          aria-label="Download CV"
+        >
+          Download CV
+        </a>
+      </article>
+
+      <!-- Portfolio Section -->
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="article-title">Projects</h2>
+        </header>
+        <ul class="portfolio-list">
+          <li class="portfolio-item">
+            <a
+              href="https://github.com/Stylebender001/Teacher-Appointment-System"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Project 1 - Teacher-Appointment-System
+            </a>
+          </li>
+          <li class="portfolio-item">
+            <a
+              href="https://github.com/shardulsapkota/project2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Project 2 - React ToDo App
+            </a>
+          </li>
+          <li class="portfolio-item">
+            <a
+              href="https://github.com/shardulsapkota/project3"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Project 3 - Laravel Blog
+            </a>
+          </li>
+        </ul>
+      </article>
+
+      <!-- Contact Section -->
+      <article class="contact" data-page="contact">
+        <section class="contact-form">
+          <h3 class="article-title">Contact Form</h3>
+          <form id="contact-form" class="form" data-form>
+            <div class="input-wrapper">
+              <input
+                type="text"
+                name="from_name"
+                class="form-input"
+                placeholder="Full name"
+                required
+                data-form-input
+              />
+              <input
+                type="email"
+                name="reply_to"
+                class="form-input"
+                placeholder="Email address"
+                required
+                data-form-input
+              />
+            </div>
+            <textarea
+              name="message"
+              class="form-input"
+              placeholder="Your Message"
+              required
+              data-form-input
+            ></textarea>
+            <button class="form-btn" type="submit" data-form-btn disabled>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+      </article>
+    </div>
+    <!-- Ionicons for modern browsers (ES module) -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <!-- Ionicons fallback for older browsers -->
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <!-- Your main JS logic (includes EmailJS, nav, sidebar etc.) -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
